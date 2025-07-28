@@ -1,0 +1,307 @@
+﻿<script src="https://use.fontawesome.com/ed883a7b2f.js"></script>
+<style>
+    a.mm:hover, a.mm:link, a.mm:visited, a.mm:active {
+        color: #000;
+        font-family: Arial;
+        font-size: 13px;
+        display: block;
+        float: left;
+        padding: 6px 12px 6px 12px;
+        border: 1px solid #ddd;
+        background-color: #f0f0f0;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    a.mm:hover {
+        background-color: #ddd
+    }
+</style>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+    .table_global {
+        margin-top: 0px;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #header {
+        background: rgba(39, 40, 51, 0.965);
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+        cursor: default;
+        height: 3.5em;
+        left: 0;
+        line-height: 3.5em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        font-family: "Roboto", Helvetica, sans-serif;
+    }
+
+        #header .button {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 0;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+            color: #ffffff !important;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 300;
+            height: 3em;
+            line-height: 3em;
+            padding: 0 2.25em;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            #header .button.special:hover {
+                background-color: #e76278;
+            }
+
+            #header .button.special {
+                background-color: #e44c65;
+                box-shadow: none;
+                color: #ffffff !important;
+            }
+
+        #header h1 {
+            height: inherit;
+            left: 1.25em;
+            line-height: inherit;
+            margin: 0;
+            position: absolute;
+            top: 0;
+        }
+
+            #header h1 a {
+                display: inline-block;
+                height: inherit;
+                line-height: inherit;
+                color: rgba(255, 255, 255, 0.75);
+            }
+
+                #header h1 a img {
+                    display: inline-block;
+                    width: 350px;
+                    height: auto;
+                    vertical-align: middle;
+                    margin-top: 12px;
+                }
+
+        #header nav {
+            position: absolute;
+            right: 1em;
+            top: 0;
+        }
+
+            #header nav ul {
+                margin: 0;
+            }
+
+                #header nav ul li {
+                    display: inline-block;
+                    margin-left: 1em;
+                }
+
+                    #header nav ul li a, #header nav ul li span {
+                        border: 0;
+                        color: rgba(255, 255, 255, 0.75);
+                        display: inline-block;
+                        height: inherit;
+                        line-height: inherit;
+                        outline: 0;
+                        font-size: 15pt;
+                        font-family: Roboto, Helvetica, sans-serif;
+                    }
+
+                        #header nav ul li a:hover {
+                            color: #e44c65 !important;
+                            border-bottom-color: transparent;
+                            text-decoration: none;
+                        }
+
+                        #header nav ul li a.button, #header nav ul li span.button {
+                            height: 2em;
+                            line-height: 2em;
+                            padding: 0 1.25em;
+                        }
+
+                        #header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
+                            margin-right: 0.5em;
+                        }
+
+                    #header nav ul li.active > a, #header nav ul li.active > span {
+                        color: #e44c65;
+                    }
+
+                    #header nav ul li > ul {
+                        display: none;
+                    }
+
+    .calculator {
+        width: 1020;
+        margin: 20px auto;
+        color: rgba(255, 255, 255, 0.75);
+        font-family: "Roboto", Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 40px;
+    }
+
+        .calculator a {
+            -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            color: #e44c65;
+            text-decoration: none;
+        }
+
+            .calculator a:hover {
+                color: #e44c65 !important;
+                border-bottom-color: transparent;
+            }
+
+        .calculator .calculatorInner > div {
+            width: 450px;
+            float: left;
+            padding: 0 0 0 0;
+        }
+
+
+        .calculator .row:after, .calculator .row:before {
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+        }
+
+        .calculator .calculatorInner > div input[type="text"]:focus {
+            border-color: #e44c65;
+        }
+
+        .calculator .calculatorInner > div input[type="text"] {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            -moz-transition: border-color 0.2s ease-in-out;
+            -webkit-transition: border-color 0.2s ease-in-out;
+            -ms-transition: border-color 0.2s ease-in-out;
+            transition: border-color 0.2s ease-in-out;
+            background: transparent;
+            border-radius: 4px;
+            border: solid 1px rgba(255, 255, 255, 0.3);
+            color: inherit;
+            display: block;
+            outline: 0;
+            padding: 0 1em;
+            text-decoration: none;
+            height: 40px;
+        }
+
+        .calculator h1, .calculator h2, .calculator h3, .calculator h4, .calculator h5, .calculator h6 {
+            color: #ffffff;
+            font-weight: 300;
+            line-height: 1em;
+            margin: 0 0 1em 0;
+        }
+
+        .calculator h3 {
+            font-size: 1.35em;
+            line-height: 1.5em;
+        }
+</style>
+<table cellpadding=0 cellspacing=0 border=0 width=100% height=100% style='background:#1c1d26'>
+    <tr>
+        <td valign=top height=59px style="background:#1c1c22">
+
+            <header id="header">
+                <h1 id="logo"><a href="http://www.southerncarimporter.co.nz"><img src="http://www.southerncarimporter.co.nz/images/logo.png"></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/#process" class="scrolly">Process</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/#why-choose-us" class="scrolly">Why Choose Us</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/#about-us" class="scrolly">About Us</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/#nz-stock" class="scrolly">NZ Stock</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/#contact-us" class="scrolly">Contact Us</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="http://www.southerncarimporter.co.nz/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    </tr>
+    <tr style='vertical-align: top;background:#1c1d26'>
+        <td style='height:140px'>
+            <div class="calculator">
+                <div class="row uniform calculatorInner">
+                    <div class="6u 6u(medium) 12u$(xsmall)">
+                        <input style="width: 100px; float: right; margin-right: 8px;" type="text" id="bidamount" value="" placeholder="0" />
+                        <select id="currency" style="float: right; margin-right: 8px; height: 40px;">
+                            <option value="JPY">JPY</option>
+                            <option value="NZD">NZD</option>
+                        </select>
+                        <span style="float: right; margin-right: 8px">Enter your bid amount in </span>
+                        <i style="float: right;" class="fa fa-calculator fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="6u 6u(medium) 12u(xsmall)">
+                        <span> ≈ Total landed price in NZD: </span> <span id="result" style="margin-right: 15px;">0</span>
+                        <span class="smallTip"><a href="http://www.southerncarimporter.co.nz/guide.html#costBreakDown" target="_blank"><i>How it is calculated?</i></a></span>
+                    </div>
+                </div>
+                <div class="row uniform calculatorInner">
+                    <span class="smallTip"><i>This calculator assumes NZ$1=JP￥75 and its result is for indicative only. The actual result should use realtime exchange rate instead.</i></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function exChange() {
+                    var bidAmount = Number(document.getElementById("bidamount").value);
+                    if (document.getElementById("currency").value == "JPY") {
+                        bidAmount = bidAmount / 75;
+                    }
+                    var fee = 1390;
+                    if (bidAmount > 10000) {
+                        fee = 1890;
+                    }
+                    if (bidAmount > 30000) {
+                        fee = 2690;
+                    }
+                    var resNZD = (bidAmount + fee) * 1.15 + 1590 + 990 + 800;
+                    var result = Number(resNZD).toFixed(2);
+                    document.getElementById("result").innerHTML = result;
+                }
+
+                document.getElementById("bidamount").onkeyup = function () {
+                    exChange();
+                };
+                document.getElementById("currency").onchange = function () {
+                    exChange();
+                };
+            </script>
+        </td>
+    </tr>
+    <tr>
+        <td valign=top>

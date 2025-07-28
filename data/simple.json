@@ -1,0 +1,167 @@
+
+[
+	{
+	"id": 1,
+	"title": "0",
+	"engineCapacity": null, //发动机容量
+	"odometer": null, //里程数
+	"transmission": "Manual", //自动/手动挡
+	"fuel": "Petrol", //燃料
+	"price": 8597,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 2,
+	"title": "1",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1833,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 3,
+	"title": "2",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 3595,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 4,
+	"title": "3",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 9085,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 5,
+	"title": "4",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1359,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 6,
+	"title": "5",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1653,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 7,
+	"title": "6",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 6425,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 8,
+	"title": "7",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1530,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 9,
+	"title": "8",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 4962,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 10,
+	"title": "9",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 7683,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 11,
+	"title": "10",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1391,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 12,
+	"title": "11",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 2554,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 13,
+	"title": "12",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 8034,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 14,
+	"title": "13",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 4286,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 15,
+	"title": "14",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 1761,
+	"cover": "/images/banner1.svg"
+	},
+	{
+	"id": 16,
+	"title": "15",
+	"engineCapacity": null,
+	"odometer": null,
+	"transmission": "Manual",
+	"fuel": "Petrol",
+	"price": 5365,
+	"cover": "/images/banner1.svg"
+	}
+ ]
+// http://southerncarimporter.azurewebsites.net/api/stock/simples
+
+
+// http://southerncarimporter.azurewebsites.net/api/stock/detail/8
